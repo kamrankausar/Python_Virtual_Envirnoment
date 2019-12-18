@@ -1,9 +1,18 @@
 ### To Install the Virtual Environment
+
 Step1:- Create a project directory
+$mkdir Environments
 Step2:- Change into the project directory
-Step3:- Run python3 -m venv <name_of_virtualenv>
+$cd Environments
+Step3:- For Python 3 version:- Run python3 -m venv <name_of_virtualenv>
+$ python3 -m venv <name_of_virtualenv>
 Note If "venv" is not install then install it "sudo apt-get install python3-venv"
 Step4:- source <name_of_virtualenv>/bin/activate
+$source <name_of_virtualenv>/bin/activate
+Step5:- To check the Python Version and list of Package
+$which python #Check Python Version
+$python -V #Check Python Version
+$pip list     #See all package install
 To Deactivae 
 Step5:- deactivate
 
