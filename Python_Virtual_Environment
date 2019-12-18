@@ -4,7 +4,10 @@ Step1:- Create a project directory
 $mkdir Environments
 Step2:- Change into the project directory
 $cd Environments
-Step3:- For Python 3 version:- Run python3 -m venv <name_of_virtualenv>
+Step3:- Create Virtual Environment according to Python Version
+Step3.1:- For Python 2 version:- Run virtualenv <name_of_virtualenv>
+$virtualenv <name_of_virtualenv>
+Step3.2:- For Python 3 version:- Run python3 -m venv <name_of_virtualenv>
 $ python3 -m venv <name_of_virtualenv>
 Note If "venv" is not install then install it "sudo apt-get install python3-venv"
 Step4:- source <name_of_virtualenv>/bin/activate
