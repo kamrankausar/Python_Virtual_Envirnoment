@@ -2,26 +2,37 @@
 
 Step1:- Create a project directory
 $mkdir Environments
+
 Step2:- Change into the project directory
 $cd Environments
-Step3:- Create Virtual Environment according to Python Version
-Step3.1:- For Python 2 version:- Run virtualenv <name_of_virtualenv>
+
+Step3:- Create Virtual Environment according to specify Python Version you required
+Step3.1:- For Python 2 version:- Run "virtualenv <name_of_virtualenv>"
 $virtualenv <name_of_virtualenv>
-Step3.2:- For Python 3 version:- Run python3 -m venv <name_of_virtualenv>
+
+Step3.2:- For Python 3 version:- Run "python3 -m venv <name_of_virtualenv>"
 $ python3 -m venv <name_of_virtualenv>
 Note If "venv" is not install then install it "sudo apt-get install python3-venv"
+
+Step3.3:- If you want to install some specific version i.e 2.6 or 3.2:- Run "virtualenv -p /path/of/python/python2.6 env_name"
+$ virtualenv -p /usr/bin/python2.6 py26_env
+
+
 Step4:- source <name_of_virtualenv>/bin/activate
 $source <name_of_virtualenv>/bin/activate
-Step5:- To check the Python Version and list of Package
-$which python #Check Python Version
-$python -V #Check Python Version
-$pip list     #See all package install
-To Deactivae 
-Step5:- deactivate
 
+Step5:- To check the Python Version and list of Package
+$ which python #Check Python Version
+$ python -V #Check Python Version
+$ pip list     #See all package install
+
+Step5:- deactivate
 ### How to use in future
 Step1:- souce <name_of_virtualenv>/bin/activate
 To Deactivate
 Step2:- deactivate
 
+Steps Others:-
+Step Save the package version in "requirements.txt":- "pip freeze --local >file_name.txt"
+$ pip freeze --local > requirements.txt
 
