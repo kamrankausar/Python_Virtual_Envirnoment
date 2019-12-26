@@ -33,6 +33,10 @@ To Deactivate
 Step2:- deactivate
 
 Steps Others:-
-Step Save the package version in "requirements.txt":- "pip freeze --local >file_name.txt"
+Step #1 Save the package version in "requirements.txt":- "pip freeze --local >file_name.txt"
 $ pip freeze --local > requirements.txt
+
+Step #2 Install package from reqirements.txt:- "pip install -r requirements.txt"
+$ pip install -r requirements.txt
+
 
