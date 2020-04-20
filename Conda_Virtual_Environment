@@ -10,7 +10,7 @@ conda search "^python$"
 conda create -n yourenvname python=x.x anaconda
 
 # To avtivate
-source activate yourenvname
+conda activate yourenvname
 
 #Install additional Python packages to a virtual environment.
 conda install -n yourenvname [package]
